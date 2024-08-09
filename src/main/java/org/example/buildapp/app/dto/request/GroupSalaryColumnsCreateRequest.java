@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.example.buildapp.core.domain.enums.GroupColumnTypeEnums;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
@@ -30,5 +31,5 @@ public class GroupSalaryColumnsCreateRequest {
     private String name;
     private String description;
     @NotNull
-    private String groupColumnType;
+    private GroupColumnTypeEnums groupColumnType;
 }

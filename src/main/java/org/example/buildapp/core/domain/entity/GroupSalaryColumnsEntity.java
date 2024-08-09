@@ -1,6 +1,7 @@
 package org.example.buildapp.core.domain.entity;
 
 import lombok.*;
+import org.example.buildapp.core.domain.enums.GroupColumnTypeEnums;
 
 import javax.persistence.*;
 import java.time.OffsetDateTime;
@@ -19,7 +20,8 @@ public class GroupSalaryColumnsEntity {
     private String code;
     private String name;
     private String description;
-    private String groupColumnType;
+    @Enumerated(EnumType.STRING)
+    private GroupColumnTypeEnums groupColumnType;
     private Long branchId;
     private OffsetDateTime createdAt;
     private Long createdBy;

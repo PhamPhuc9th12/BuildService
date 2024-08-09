@@ -2,6 +2,7 @@ package org.example.buildapp.app.dto.request;
 
 import org.example.buildapp.core.domain.constant.ErrorCode;
 import lombok.*;
+import org.example.buildapp.core.domain.enums.GroupColumnTypeEnums;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
@@ -26,5 +27,5 @@ public class GroupSalaryColumnUpdateRequest {
     private String name;
     private String description;
     @NotNull
-    private String groupColumnType;
+    private GroupColumnTypeEnums groupColumnType;
 }
